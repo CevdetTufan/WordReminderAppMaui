@@ -1,4 +1,6 @@
-﻿namespace WordReminderAppMaui
+﻿using WordReminderAppMaui.Pages;
+
+namespace WordReminderAppMaui
 {
 	public partial class App : Application
 	{
@@ -6,7 +8,7 @@
 		{
 			InitializeComponent();
 
-			MainPage = new AppShell();
+			MainPage = new NavigationPage(new LoginPage());
 		}
 	}
 }
