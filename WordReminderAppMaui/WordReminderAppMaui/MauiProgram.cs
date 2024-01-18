@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using WordReminderAppMaui.Services;
 
 namespace WordReminderAppMaui
 {
@@ -18,6 +19,7 @@ namespace WordReminderAppMaui
 #if DEBUG
 			builder.Logging.AddDebug();
 #endif
+
 
 			return builder.Build();
 		}
